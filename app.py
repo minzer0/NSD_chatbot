@@ -36,7 +36,7 @@ if user_input := st.chat_input():
     #Add user message to chat history
     st.session_state.conversation_history.append({"role": "user", "content": user_input})
     st.chat_message("user").write(user_input)      
-    with st.spinner('Yeonwoo is typing...'):
+    with st.spinner('Jessica is typing...'):
         #response generation
         response = client.chat.completions.create(
             model=st.session_state["openai_model"], 
